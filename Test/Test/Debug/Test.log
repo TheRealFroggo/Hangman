@@ -1,4 +1,4 @@
 ﻿  Main.cpp
-C:\Users\park0491\Desktop\Game-Programming-2\Test\Test\Main.cpp(18,23): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\park0491\Desktop\Game-Programming-2\Test\Test\Main.cpp(26,27): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\park0491\Desktop\Game-Programming-2\Test\Test\Main.cpp(20,23): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\park0491\Desktop\Game-Programming-2\Test\Test\Main.cpp(33,31): warning C4018:  '<': signed/unsigned mismatch
   Test.vcxproj -> C:\Users\park0491\Desktop\Game-Programming-2\Test\Debug\Test.exe
