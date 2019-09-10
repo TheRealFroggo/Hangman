@@ -9,6 +9,7 @@ int main()
 {
     string word;
     string guessWord;
+    string guessedLetters = "";
 
     int lives = 7;
 
@@ -24,7 +25,11 @@ int main()
     {
         cout << "You have " << lives << " lives left\n";
         cout << "Here is the word:\n" << guessWord << endl;
+        cout << "\nLetters you have guessed: " << guessedLetters << endl;
         char temp = guessLetter();
+        
+        guessedLetters += temp;
+        
 
         do 
         {
@@ -42,6 +47,9 @@ int main()
             if (guess == false)
                 lives--;
         } while (false);
+
+        system("CLS");
+
     } while (guessWord != word && !lives == 0);
 
     system("CLS");
