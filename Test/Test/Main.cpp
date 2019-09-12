@@ -16,9 +16,7 @@ int main()
     cout << "Input a word: ";
     cin >> word;
     for (int i = 0; i < word.length(); i++)
-    {
         word[i] = tolower(word[i]);
-    }
 
     system("CLS");
 
@@ -31,6 +29,7 @@ int main()
         cout << "Here is the word:\n" << guessWord << endl;
         cout << "The word is " << word.length() << " letters long\n";
         cout << "Letters you have guessed: " << guessedLetters << endl;
+
         char temp = guessLetter();
         
         temp = tolower(temp);
