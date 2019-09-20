@@ -21,7 +21,7 @@ int main()
     for (int i = 0; i < word.length(); i++)
         word[i] = tolower(word[i]);
 
-    system("CLS");
+    system("cls");
 
     for (int i = 0; i < word.length(); i++)
     {
@@ -64,11 +64,11 @@ int main()
                 lives--;
         } while (false);
 
-        system("CLS");
+        system("cls");
 
     } while (guessWord != word && !lives == 0);
 
-    system("CLS");
+    system("cls");
 
     if (guessWord == word)
         cout << "Congratulations, the word is: " << word << endl << endl;
