@@ -75,6 +75,8 @@ int main()
     else
         cout << "lol u suk\nThe Word is: " << word << endl << endl;
 
+
+    system("pause");
     return 0;
 }
 
