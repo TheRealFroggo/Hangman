@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring>
+#include <string>
 
 using namespace std;
 
@@ -12,22 +12,33 @@ int main()
     string guessedLetters = "";
 
     int lives = 7;
+    int totalSpaces = 0;
 
     cout << "Input a word: ";
-    cin >> word;
+    getline(cin, word);
+
+
     for (int i = 0; i < word.length(); i++)
         word[i] = tolower(word[i]);
 
     system("CLS");
 
     for (int i = 0; i < word.length(); i++)
-        guessWord += "_";
+    {
+        if (word[i] != ' ')
+            guessWord += "_";
+        else
+        {
+            guessWord += " ";
+            totalSpaces++;
+        }
+    }
 
     do
     {
         cout << "You have " << lives << " lives left\n";
         cout << "Here is the word:\n" << guessWord << endl;
-        cout << "The word is " << word.length() << " letters long\n";
+        cout << "The word is " << word.length() - totalSpaces << " letters long\n";
         cout << "Letters you have guessed: " << guessedLetters << endl;
 
         char temp = guessLetter();
@@ -60,9 +71,9 @@ int main()
     system("CLS");
 
     if (guessWord == word)
-        cout << "Congratulations, the word is: " << word;
+        cout << "Congratulations, the word is: " << word << endl << endl;
     else
-        cout << "lol u suk";
+        cout << "lol u suk\nThe Word is: " << word << endl << endl;
 
     return 0;
 }
